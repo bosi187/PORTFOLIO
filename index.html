@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Bosi Rajesh</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.light-mode {
+      background-color: #f0f4fa;
+      color: #000;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: #f0f4fa;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #3b82f6;
+      color: white;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .toggle-mode {
+      cursor: pointer;
+      font-size: 1.3rem;
+      background: none;
+      border: none;
+      color: white;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      background-color: rgba(173, 216, 230, 0.6);
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .dark-mode .section {
+      background-color: rgba(30, 41, 59, 0.7);
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    .btn-group button {
+      margin: 0 10px;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-blue { background-color: #3b82f6; color: white; }
+    .btn-green { background-color: #10b981; color: white; }
+    
+    .profile-img {
+      width: 150px;
+      border-radius: 10px;
+      float: right;
+      margin: 0 0 10px 20px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .footer i {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <header>
+    <div class="logo">BOSI RAJESH PORTFOLIO</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="https://drive.google.com/file/d/1tA5qgc7PkamIQKEqjMS3TGGT6zqeTeo3/view?usp=drive_link" target="_blank">Resume</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle-mode" onclick="toggleMode()">⏾</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="home" class="section">
+      <img src="profile-image.png" alt="Profile" class="profile-img">
+      <h1>Hello !</h1>
+      <p><strong>I am Bosi Rajesh</strong><br>Web Developer & UI/UX Designer</p>
+      <p>I design and build responsive user-centric websites with performance and accessibility in mind.</p>
+      <div class="btn-group">
+        <a href="https://drive.google.com/file/d/1tA5qgc7PkamIQKEqjMS3TGGT6zqeTeo3/view?usp=drive_link" target="_blank">
+        <button class="btn-blue">Download CV</button>
+      </a>
+        <button class="btn-blue">View Projects</button>
+        <button class="btn-green">HIRE ME</button>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate <strong>Web Developer</strong>, currently pursuing my B.Tech in Computer Science (CGPA: 8.47) from <strong>Centurion University of Technology and Management, Paralakhemundi</strong>.
+        I enjoy building interactive, user-centric websites, exploring front-end frameworks, and creating seamless user experiences.
+      </p>
+
+      <ul>
+        <li><strong>B.Tech Duration:</strong> 2021 – 2025</li>
+        <li><strong>Languages Known:</strong> English, Hindi, Odia, Telugu</li>
+        <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript, React</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Personal Details</h2>
+      <ul>
+        <li><strong>Gender:</strong> Male</li>
+        <li><strong>Date of Birth:</strong> 11 June, 2002</li>
+        <li><strong>Email:</strong> bosirajesh18@gmail.com</li>
+        <li><strong>Phone:</strong> 9078554556 / 8147674621</li>
+        <li><strong>Address:</strong> Chinna Street, Tatipatti, Gajapati, Odisha – 761210</li>
+      </ul>
+    </section>
+
+
+    <section class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Centurion University of Technology and Management, Paralakhemundi</strong><br>
+          B.Tech – Computer Science & Engineering<br>
+          CGPA: 8.30 / 10
+        </li>
+        <br>
+        <li>
+          <strong>Jawahar Navodaya Vidyalaya, Gajapati</strong><br>
+          12th – CBSE Board<br>
+          Percentage: 77%
+        </li>
+        <br>
+        <li>
+          <strong>Jawahar Navodaya Vidyalaya, Gajapati</strong><br>
+          10th – CBSE Board<br>
+          Percentage: 73%
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <h3>🚀 Virtual Space Mission</h3>
+      <p>
+        The objective of this project is to create a realistic Space Mission Model and provide users with an immersive experience of launching and exploring space through a virtual tour.
+      </p>
+      <ul>
+        <li><strong>Software Used:</strong> Blender, Unity</li>
+        <li><strong>Technologies:</strong> 3D Modeling, Unity3D, Virtual Reality, Animation</li>
+      </ul>
+
+      <h3>🛕 Virtual Ayodhya Temple</h3>
+      <p>
+        This project is a 3D representation of the Ayodhya Ram Mandir, designed to offer a virtual tour of the iconic temple located in Ayodhya. It aims to bring cultural heritage to life through immersive technology.
+      </p>
+      <ul>
+        <li><strong>Software Used:</strong> Blender, Unity</li>
+        <li><strong>Technologies:</strong> 3D Modeling, Unity3D, Virtual Reality, Animation</li>
+      </ul>
+    </section>
+
+
+    <section class="section">
+      <h2>Internship</h2>
+      <p><strong>Gram Tarang (June - July 2024)</strong><br>
+        Developed a learning website with a 3D interface using Unity and Blender for modeling. Applied UX principles to improve interaction.
+      </p>
+      <ul>
+        <li><a href="https://capacitor2-nine.vercel.app/" target="_blank">Capacitor</a></li>
+        <li><a href="https://micrometer.vercel.app/" target="_blank">Micrometer</a></li>
+        <li><a href="https://vernier-caliper.vercel.app/" target="_blank">Vernier Caliper</a></li>
+        <li><a href="https://rheostat.vercel.app/" target="_blank">Rheostat</a></li>
+        <li><a href="https://voltmeter-six.vercel.app/" target="_blank">Voltmeter</a></li>
+      </ul>
+    </section>
+
+
+    <section class="section">
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li><strong>Languages:</strong> HTML5, CSS, JavaScript, Python</li>
+        <li><strong>Frameworks:</strong> React, Bootstrap, Tailwind CSS</li>
+        <li><strong>Tools:</strong> Git, VS Code, Figma, Unity, Blender</li>
+      </ul>
+    </section>
+
+
+    <section class="section">
+      <h2>Achievements</h2>
+      <p><li>1. Runner-Up in the 3D Digital Game Art Competition at Manzar 2.o the national student management Fest.</li>
+         <li>2. Runner-Up in one-day workshop on COGITATE Art of Critical Thinking</li></p>
+    </section>
+
+    <section class="section">
+      <h2>Works & Uploads</h2>
+      <ul>
+        <li><a href="https://github.com/bosi187" target="_blank">GitHub – @bosi187</a></li>
+        <li><a href="https://www.linkedin.com/in/bosi-rajesh-03b684298" target="_blank">LinkedIn – Bosi Rajesh</a></li>
+        <li><a href="https://www.instagram.com/bosi_rajesh_18/?igsh=ZW1lM3F0bW1lbzRy#" target="_blank">Instagram – @bosi_rajesh_18</a></li>
+      </ul>
+    </section>
+
+
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/bosi-rajesh-03b684298" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/bosi_rajesh_18/?igsh=ZW1lM3F0bW1lbzRy#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/bosi187" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const toggle = document.querySelector('.toggle-mode');
+      body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode');
+      toggle.textContent = body.classList.contains('dark-mode') ? '☀︎' : '⏾';
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-theme");
+    }
+
+    // Scroll reveal animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
